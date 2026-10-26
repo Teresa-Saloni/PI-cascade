@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "picascade"
+version = "1.0.0"
+description = "Two-stage prompt injection detection: hidden-state probe gate + rule-based monitor LLM"
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+api = ["fastapi>=0.110", "uvicorn>=0.29"]
+
+[tool.setuptools]
+packages = ["picascade"]
